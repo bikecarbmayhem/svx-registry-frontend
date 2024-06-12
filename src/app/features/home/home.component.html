@@ -1,0 +1,17 @@
+<p>home works!</p>
+<h1> WELCOME TO THE PAINS OF HELL WELLNESS CLINIC</h1>
+
+<!-- () are for functions, [] are for when we want to pass something on to a component -->
+<form [formGroup]= "form">
+  <div>
+    <span> First name:</span>
+    <input formControlName="name"/> </div>
+  <div>
+    <span> Last name:</span>
+    <input formControlName="lastName"/> </div>
+  <div>
+    <span> Age: </span>
+    <input formControlName="age"/> </div>
+
+  <button type="submit" (click)="clickButton()">pass along</button>
+</form>

@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa; /* Light background color for the header */
+  border-bottom: #666666;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links div {
+  margin-right: 20px; /* Space between the links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #007bff; /* Blue color for the links */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

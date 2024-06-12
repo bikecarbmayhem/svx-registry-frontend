@@ -1,0 +1,16 @@
+<button mat-raised-button color="primary"
+        type="button" (click)="getFact()">Get facts about cats </button>
+
+<mat-list role="list">
+  <mat-list-item role="listitem"
+                 [class]="factObj.includesKitten ? 'pink' : ' ' "
+                *ngFor="let factObj of facts"
+  >
+  <div>
+    <span *ngIf="factObj.length > 100"> !!! </span>
+    <span> {{factObj.fact}} </span>
+  </div> </mat-list-item>
+
+
+
+</mat-list>
